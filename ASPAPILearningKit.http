@@ -1,0 +1,6 @@
+@ASPAPILearningKit_HostAddress = http://localhost:5042
+
+GET {{ASPAPILearningKit_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

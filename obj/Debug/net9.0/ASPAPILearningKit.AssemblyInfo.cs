@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASPAPILearningKit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c0fdb86065f9b5a271f78bd2c88630ebb4d7a42")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87319793181f41a55d49d8d8de82818a2197b7b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASPAPILearningKit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASPAPILearningKit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

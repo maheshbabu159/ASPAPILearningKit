@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ASPAPILearningKit.Models;
+using Microsoft.AspNetCore.SignalR;
 
 namespace ASPAPILearningKit.Controllers
 {
@@ -14,16 +15,21 @@ namespace ASPAPILearningKit.Controllers
     public class CustomersController : ControllerBase
     {
         private readonly TempdbContext _context;
+        private readonly IHubContext<ProductHub> _hubContext;
 
-        public CustomersController(TempdbContext context)
+        public CustomersController(TempdbContext context, IHubContext<ProductHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
+            
         }
 
         // GET: api/Customers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
         {
+             // Notify clients via SignalR
+            await _hubContext.Clients.All.SendAsync("ReceiveProduct", "New Product Added");
             return await _context.Customers.ToListAsync();
         }
 

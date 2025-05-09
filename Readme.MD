@@ -1,15 +1,15 @@
-# Flickr Search App
+# ASPAPILearningKit
 
-This is a simple iOS application built using SwiftUI that allows users to search for images on Flickr. It displays search results in a grid, showing the photo thumbnails, and provides detailed information about each photo when selected.
+ASPAPILearningKit has the implementation to create apis using .Net ASP Core.
 
 ![Demo](demo.gif)
 
 
 ## Features
 
-- Search for images on Flickr by entering a keyword in the search bar.
-- View image thumbnails in a responsive grid.
-- Tap on an image to view detailed information, including the photo title, author, and published date.
+- Install Docker
+- Install Azure Data Studio
+- Create a Project 
 - Asynchronous image loading with progress indicators.
 - Accessibility features such as labels and hints for improved user experience.
 
@@ -83,7 +83,6 @@ This is a simple iOS application built using SwiftUI that allows users to search
                         -api \
                         -async
 
-
 ## Project Structure
 
 ### Main Components:
@@ -102,6 +101,10 @@ This is a simple iOS application built using SwiftUI that allows users to search
 2. Open the project in Xcode.
 
 3. Build and run the app on a simulator or physical device.
+
+        https://localhost:5043/
+        https://localhost:5043/swagger/
+        https://localhost:5043/openapi/v1.json
 
 ## API
 
